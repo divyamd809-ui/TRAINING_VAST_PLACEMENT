@@ -1,0 +1,141 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "toc_visible": true,
+      "authorship_tag": "ABX9TyNzqmzFbdanCuMkCYB6BwhE",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/divyamd809-ui/TRAINING_VAST_PLACEMENT/blob/main/pyq.vast\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AtFdsB9EnLXZ",
+        "outputId": "93091eeb-d92e-4037-e600-0e92a61eff73"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Using Temp\n",
+            "5 10\n",
+            "Using ,\n",
+            "5 10\n",
+            "Using + and -\n",
+            "5 10\n",
+            "Using ^\n",
+            "5 10\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\"Using Temp\")\n",
+        "a,b=10,5\n",
+        "temp=a\n",
+        "a=b\n",
+        "b=temp\n",
+        "print(a,b)\n",
+        "print(\"Using ,\")\n",
+        "a,b=10,5\n",
+        "a,b=b,a\n",
+        "print(a,b)\n",
+        "print(\"Using + and -\")\n",
+        "a,b=10,5\n",
+        "a=a+b\n",
+        "b=a-b\n",
+        "a=a-b\n",
+        "print(a,b)\n",
+        "print(\"Using ^\")\n",
+        "a,b=10,5\n",
+        "a=a^b\n",
+        "b=a^b\n",
+        "a=a^b\n",
+        "print(a,b)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "N=int(input(\"Enter max no. of candies:\"))\n",
+        "K=int(input(\"Enter min no. of candies:\"))\n",
+        "C=1\n",
+        "R=N\n",
+        "while(C==1):\n",
+        "  M=int(input(\"Enter amout of candies needed:\"))\n",
+        "  if(M>N):\n",
+        "    print(\"invalid\")\n",
+        "  else:\n",
+        "    R=R-M\n",
+        "    if(R<=K):\n",
+        "      R=N\n",
+        "    print(\"SOLD=\",M)\n",
+        "    print(\"Remaining=\",R)\n",
+        "    C=int(input(\"DO you want to continue(1or0):\"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JRb6jYJYsCz4",
+        "outputId": "8580ce62-e0a5-40b1-f568-4d5a020c9615"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Enter max no. of candies:3\n",
+            "Enter min no. of candies:1\n",
+            "Enter amout of candies needed:2\n",
+            "SOLD= 2\n",
+            "Remaining= 3\n",
+            "DO you want to continue(1or0):1\n",
+            "Enter amout of candies needed:3\n",
+            "SOLD= 3\n",
+            "Remaining= 3\n",
+            "DO you want to continue(1or0):1\n",
+            "Enter amout of candies needed:2\n",
+            "SOLD= 2\n",
+            "Remaining= 3\n",
+            "DO you want to continue(1or0):0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "TVrFzBK6sNef"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
