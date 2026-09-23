@@ -1,3 +1,4 @@
+ans-------------------
 n=int(input("Enter total no. of monkeys:"))
 k=int(input("Enter no. of banana monkey can eat:"))
 j=int(input("Enter no. of peanut monkey can eat:"))
