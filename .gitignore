@@ -1,0 +1,12 @@
+# Ignore
+node_modules/
+venv/
+__pycache__/
+.env
+*.log
+
+# Keep
+*.py
+*.js
+*.html
+*.css
